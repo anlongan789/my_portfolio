@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/responsive/desktop/home_desktop.dart';
 import 'package:flutter_portfolio/responsive/mobile/mobile_responsive.dart';
 import 'package:flutter_portfolio/responsive/responsive_layout.dart';
-import 'package:flutter_portfolio/responsive/tablet/home_tablet.dart';
+import 'package:flutter_portfolio/responsive/tablet/tablet_responsive.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return ResponsiveLayout(
       mobileLayout: MobileResponsive(),
       desktopLayout: HomeDesktop(),
-      tabletLayout: HomeTablet(),
+      tabletLayout: TabletResponsive(),
     );
   }
 }

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class MobileHome extends StatelessWidget {
-  const MobileHome({super.key});
+class TabletHome extends StatelessWidget {
+  const TabletHome({super.key});
 
   @override
   Widget build(BuildContext context) {
