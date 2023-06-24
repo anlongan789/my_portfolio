@@ -15,7 +15,7 @@ class MobileResponsive extends StatefulWidget {
 }
 
 class _MobileResponsiveState extends State<MobileResponsive> {
-  int currentPage = 0;
+  int currentPage = 1;
   bool isDark = false;
   @override
   Widget build(BuildContext context) {

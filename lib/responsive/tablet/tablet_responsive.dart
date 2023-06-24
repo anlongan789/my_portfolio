@@ -15,7 +15,7 @@ class TabletResponsive extends StatefulWidget {
 }
 
 class _TabletResponsiveState extends State<TabletResponsive> {
-  int currentPage = 0;
+  int currentPage = 1;
   bool isDark = false;
   @override
   Widget build(BuildContext context) {
