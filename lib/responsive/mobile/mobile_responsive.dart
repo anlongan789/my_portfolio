@@ -15,7 +15,7 @@ class MobileResponsive extends StatefulWidget {
 }
 
 class _MobileResponsiveState extends State<MobileResponsive> {
-  int currentPage = 1;
+  int currentPage = 3;
   bool isDark = false;
   @override
   Widget build(BuildContext context) {
@@ -88,7 +88,7 @@ class _MobileResponsiveState extends State<MobileResponsive> {
                 },
               ),
               ListTile(
-                title: const Text('Education & Technologies'),
+                title: const Text('Education & Skills'),
                 onTap: () {
                   setState(() {
                     currentPage = 2;
@@ -119,7 +119,7 @@ class _MobileResponsiveState extends State<MobileResponsive> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         child: _buildBody(),
       ),
     );

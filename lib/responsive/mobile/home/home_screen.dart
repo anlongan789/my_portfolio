@@ -46,23 +46,18 @@ class MobileHome extends StatelessWidget {
             children: [
               const Text("- M Y  N A M E  I S"),
               const SizedBox(height: 10),
-              const Text(
+              Text(
                 "Nguyen Phung",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                ),
+                style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                      color: Colors.black,
+                    ),
               ),
-              const Text(
+              Text(
                 "Phuong An.",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  color: Color(0xff7e74f1),
-                ),
+                style: Theme.of(context).textTheme.headlineLarge!.copyWith(),
               ),
               const SizedBox(height: 10),
-              const Text("Front-end and game developer"),
+              const Text("Front-end developer"),
               const SizedBox(height: 10),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
