@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/dark_theme.dart';
 import 'package:flutter_portfolio/config/light_theme.dart';
 import 'package:flutter_portfolio/screens/home.dart';
+import 'package:get/get.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -15,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,

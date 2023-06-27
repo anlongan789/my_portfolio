@@ -5,9 +5,10 @@ ThemeData lightTheme() {
     fontFamily: "NotoSans",
     useMaterial3: true,
     brightness: Brightness.light,
+    primaryColor: const Color(0xff7e74f1),
+    primaryColorDark: Colors.black,
     textTheme: const TextTheme(
       headlineLarge: TextStyle(
-        color: Color(0xff7e74f1),
         fontWeight: FontWeight.bold,
       ),
       headlineMedium: TextStyle(

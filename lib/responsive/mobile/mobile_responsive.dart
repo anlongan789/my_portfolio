@@ -1,11 +1,14 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/config/dark_theme.dart';
+import 'package:flutter_portfolio/config/light_theme.dart';
 import 'package:flutter_portfolio/responsive/mobile/about/about_screen.dart';
 import 'package:flutter_portfolio/responsive/mobile/contact/contact_screen.dart';
 import 'package:flutter_portfolio/responsive/mobile/education_and_tech/technology_screen.dart';
 import 'package:flutter_portfolio/responsive/mobile/home/home_screen.dart';
 import 'package:flutter_portfolio/responsive/mobile/projects/project_screen.dart';
+import 'package:get/get.dart';
 
 class MobileResponsive extends StatefulWidget {
   const MobileResponsive({super.key});
@@ -15,7 +18,7 @@ class MobileResponsive extends StatefulWidget {
 }
 
 class _MobileResponsiveState extends State<MobileResponsive> {
-  int currentPage = 3;
+  int currentPage = 4;
   bool isDark = false;
   @override
   Widget build(BuildContext context) {
@@ -29,17 +32,20 @@ class _MobileResponsiveState extends State<MobileResponsive> {
             });
           },
           child: RichText(
-            text: const TextSpan(
+            text: TextSpan(
               text: "AnNg",
               style: TextStyle(
+                color: Theme.of(context).primaryColorDark,
                 fontFamily: "Yellowtail",
                 fontSize: 20,
-                color: Colors.black,
               ),
-              children: [
+              children: const [
                 TextSpan(
                   text: ".",
-                  style: TextStyle(color: Color(0xff7e74f1), fontSize: 30),
+                  style: TextStyle(
+                    color: Color(0xff7e74f1),
+                    fontSize: 30,
+                  ),
                 )
               ],
             ),
@@ -50,21 +56,18 @@ class _MobileResponsiveState extends State<MobileResponsive> {
               ? IconButton(
                   onPressed: () {
                     setState(() {
-                      ThemeMode.dark;
-                      isDark = !isDark;
+                      isDark = true;
                     });
-                    print("$isDark");
+                    Get.changeTheme(darkTheme());
                   },
                   icon: const Icon(Icons.dark_mode_outlined),
                 )
               : IconButton(
                   onPressed: () {
-                    ThemeData.light();
                     setState(() {
-                      ThemeMode.light;
-                      isDark = !isDark;
+                      isDark = false;
                     });
-                    print("$isDark");
+                    Get.changeTheme(lightTheme());
                   },
                   icon: const Icon(Icons.light_mode_outlined),
                 ),

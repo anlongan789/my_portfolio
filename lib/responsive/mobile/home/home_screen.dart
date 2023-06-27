@@ -48,13 +48,13 @@ class MobileHome extends StatelessWidget {
               const SizedBox(height: 10),
               Text(
                 "Nguyen Phung",
-                style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                      color: Colors.black,
-                    ),
+                style: Theme.of(context).textTheme.headlineLarge!.copyWith(),
               ),
               Text(
                 "Phuong An.",
-                style: Theme.of(context).textTheme.headlineLarge!.copyWith(),
+                style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                      color: const Color(0xff7e74f1),
+                    ),
               ),
               const SizedBox(height: 10),
               const Text("Front-end developer"),
@@ -78,6 +78,7 @@ class MobileHome extends StatelessWidget {
                       "images/git.png",
                       height: 20,
                       width: 20,
+                      color: Theme.of(context).primaryColorDark,
                     ),
                   ),
                   const SizedBox(width: 10),
@@ -96,6 +97,7 @@ class MobileHome extends StatelessWidget {
                       "images/linkedin.png",
                       height: 20,
                       width: 20,
+                      color: Theme.of(context).primaryColorDark,
                     ),
                   ),
                 ],
