@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/dark_theme.dart';
 import 'package:flutter_portfolio/config/light_theme.dart';
-import 'package:flutter_portfolio/screens/home.dart';
+import 'package:flutter_portfolio/screens/navigation_screen.dart';
 import 'package:get/get.dart';
 
 class MyApp extends StatefulWidget {
@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
       theme: lightTheme(),
       darkTheme: darkTheme(),
-      home: HomeScreen(),
+      home: NavigationScreen(),
     );
   }
 }

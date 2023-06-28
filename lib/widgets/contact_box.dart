@@ -13,6 +13,7 @@ class ContactBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width * 0.6;
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,7 +44,10 @@ class ContactBox extends StatelessWidget {
                   .bodyLarge!
                   .copyWith(fontWeight: FontWeight.bold),
             ),
-            Text(detail),
+            SizedBox(
+              width: width,
+              child: Text(detail),
+            ),
           ],
         )
       ],

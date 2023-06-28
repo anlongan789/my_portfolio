@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/constant.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class MobileTech extends StatelessWidget {
-  const MobileTech({super.key});
+class DesktopTech extends StatelessWidget {
+  const DesktopTech({super.key});
 
   @override
   Widget build(BuildContext context) {

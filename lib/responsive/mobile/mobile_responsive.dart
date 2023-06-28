@@ -1,14 +1,10 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/dark_theme.dart';
 import 'package:flutter_portfolio/config/light_theme.dart';
-import 'package:flutter_portfolio/responsive/mobile/about/about_screen.dart';
-import 'package:flutter_portfolio/responsive/mobile/contact/contact_screen.dart';
-import 'package:flutter_portfolio/responsive/mobile/education_and_tech/technology_screen.dart';
-import 'package:flutter_portfolio/responsive/mobile/home/home_screen.dart';
-import 'package:flutter_portfolio/responsive/mobile/projects/project_screen.dart';
+
 import 'package:get/get.dart';
+
+import '../../screens/screens.dart';
 
 class MobileResponsive extends StatefulWidget {
   const MobileResponsive({super.key});
@@ -18,7 +14,7 @@ class MobileResponsive extends StatefulWidget {
 }
 
 class _MobileResponsiveState extends State<MobileResponsive> {
-  int currentPage = 4;
+  int currentPage = 0;
   bool isDark = false;
   @override
   Widget build(BuildContext context) {
@@ -131,15 +127,15 @@ class _MobileResponsiveState extends State<MobileResponsive> {
   Widget _buildBody() {
     switch (currentPage) {
       case 0:
-        return const MobileHome();
+        return const HomeScreen();
       case 1:
-        return const MobileAbout();
+        return const AboutScreen();
       case 2:
-        return const MobileTech();
+        return const TechScreen();
       case 3:
-        return const MobileProject();
+        return const ProjectScreen();
       case 4:
-        return const MobileContact();
+        return const ContactScreen();
       default:
         return const Center(
           child: Text("Error!"),

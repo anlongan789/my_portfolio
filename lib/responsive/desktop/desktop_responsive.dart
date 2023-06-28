@@ -6,14 +6,14 @@ import '../../config/dark_theme.dart';
 import '../../config/light_theme.dart';
 import '../../screens/screens.dart';
 
-class TabletResponsive extends StatefulWidget {
-  const TabletResponsive({super.key});
+class DesktopResponsive extends StatefulWidget {
+  const DesktopResponsive({super.key});
 
   @override
-  State<TabletResponsive> createState() => _TabletResponsiveState();
+  State<DesktopResponsive> createState() => _DesktopResponsiveState();
 }
 
-class _TabletResponsiveState extends State<TabletResponsive> {
+class _DesktopResponsiveState extends State<DesktopResponsive> {
   int currentPage = 0;
   bool isDark = false;
   @override
@@ -113,7 +113,7 @@ class _TabletResponsiveState extends State<TabletResponsive> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 70, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 200, vertical: 20),
         child: _buildBody(),
       ),
     );

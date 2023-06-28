@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 
 import '../../../widgets/contact_box.dart';
 
-class MobileContact extends StatelessWidget {
-  const MobileContact({super.key});
+class DesktopContact extends StatelessWidget {
+  const DesktopContact({super.key});
 
   @override
   Widget build(BuildContext context) {

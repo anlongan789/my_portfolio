@@ -4,14 +4,14 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../config/constant.dart';
 
-class TabletProject extends StatefulWidget {
-  const TabletProject({super.key});
+class DesktopProject extends StatefulWidget {
+  const DesktopProject({super.key});
 
   @override
-  State<TabletProject> createState() => _TabletProjectState();
+  State<DesktopProject> createState() => _DesktopProjectState();
 }
 
-class _TabletProjectState extends State<TabletProject> {
+class _DesktopProjectState extends State<DesktopProject> {
   List<ProjectModel> projects = ProjectModel.projects;
   bool isHover = false;
   @override

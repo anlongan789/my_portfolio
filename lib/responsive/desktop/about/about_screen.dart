@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../config/constant.dart';
 
-class TabletAbout extends StatelessWidget {
-  const TabletAbout({super.key});
+class DesktopAbout extends StatelessWidget {
+  const DesktopAbout({super.key});
 
   @override
   Widget build(BuildContext context) {

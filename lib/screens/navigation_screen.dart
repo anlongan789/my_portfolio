@@ -1,28 +1,27 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter_portfolio/responsive/desktop/home_desktop.dart';
+import 'package:flutter_portfolio/responsive/desktop/desktop_responsive.dart';
 import 'package:flutter_portfolio/responsive/mobile/mobile_responsive.dart';
 import 'package:flutter_portfolio/responsive/responsive_layout.dart';
 import 'package:flutter_portfolio/responsive/tablet/tablet_responsive.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({
+class NavigationScreen extends StatefulWidget {
+  const NavigationScreen({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<NavigationScreen> createState() => _NavigationScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _NavigationScreenState extends State<NavigationScreen> {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(
+    return const ResponsiveLayout(
       mobileLayout: MobileResponsive(),
-      desktopLayout: HomeDesktop(),
+      desktopLayout: DesktopResponsive(),
       tabletLayout: TabletResponsive(),
     );
   }

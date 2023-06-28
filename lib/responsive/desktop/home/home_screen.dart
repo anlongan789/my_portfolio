@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class TabletHome extends StatelessWidget {
-  const TabletHome({super.key});
+class DesktopHome extends StatelessWidget {
+  const DesktopHome({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+    return Row(
+      // mainAxisAlignment: MainAxisAlignment.center,
+      // crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
           child: Center(
