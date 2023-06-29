@@ -26,7 +26,8 @@ class DesktopAbout extends StatelessWidget {
             height: 100,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("images/rocket.gif"), fit: BoxFit.cover),
+                  image: AssetImage("assets/images/rocket.gif"),
+                  fit: BoxFit.cover),
             ),
           ),
         ),

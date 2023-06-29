@@ -53,73 +53,69 @@ class _TabletProjectState extends State<TabletProject> {
                         });
                       }
                     },
-                    child: Expanded(
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        curve: Curves.ease,
-                        width: double.infinity,
-                        height: 100,
-                        padding:
-                            EdgeInsets.all(projects[index].isHover ? 0 : 5),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(10),
-                          color: projects[index].isHover
-                              ? Theme.of(context).primaryColor.withAlpha(400)
-                              : Colors.grey,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: AnimatedContainer(
-                                duration: const Duration(milliseconds: 200),
-                                curve: Curves.ease,
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                    image: NetworkImage(
-                                        projects[index].projectImg),
-                                    fit: BoxFit.contain,
-                                  ),
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(10),
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      curve: Curves.ease,
+                      width: double.infinity,
+                      height: 100,
+                      padding: EdgeInsets.all(projects[index].isHover ? 0 : 5),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey),
+                        borderRadius: BorderRadius.circular(10),
+                        color: projects[index].isHover
+                            ? Theme.of(context).primaryColor.withAlpha(400)
+                            : Colors.grey,
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 200),
+                              curve: Curves.ease,
+                              width: 100,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image:
+                                      NetworkImage(projects[index].projectImg),
+                                  fit: BoxFit.contain,
                                 ),
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(10),
                               ),
                             ),
-                            Expanded(
-                              flex: 6,
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                    horizontal: 10, vertical: 5),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: [
-                                    Text(
-                                      projects[index].name,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyMedium!
-                                          .copyWith(
-                                              fontWeight: FontWeight.bold,
-                                              color: projects[index].isHover
-                                                  ? Theme.of(context)
-                                                      .primaryColor
-                                                  : Colors.black),
-                                    ),
-                                    Text(
-                                      "Technologies: ${projects[index].technologies}",
-                                      style:
-                                          Theme.of(context).textTheme.bodySmall,
-                                    )
-                                  ],
-                                ),
+                          ),
+                          Expanded(
+                            flex: 6,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 5),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Text(
+                                    projects[index].name,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .copyWith(
+                                            fontWeight: FontWeight.bold,
+                                            color: projects[index].isHover
+                                                ? Theme.of(context).primaryColor
+                                                : Colors.black),
+                                  ),
+                                  Text(
+                                    "Technologies: ${projects[index].technologies}",
+                                    style:
+                                        Theme.of(context).textTheme.bodySmall,
+                                  )
+                                ],
                               ),
-                            )
-                          ],
-                        ),
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ),

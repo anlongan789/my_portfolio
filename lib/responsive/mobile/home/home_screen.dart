@@ -32,7 +32,8 @@ class MobileHome extends StatelessWidget {
                     // color: Color(0xff7e74f1),
                     borderRadius: BorderRadius.circular(10),
                     image: const DecorationImage(
-                        image: AssetImage("images/an.png"), fit: BoxFit.cover),
+                        image: AssetImage("assets/images/an.png"),
+                        fit: BoxFit.cover),
                   ),
                 ),
               ],

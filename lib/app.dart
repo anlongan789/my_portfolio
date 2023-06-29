@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/config/dark_theme.dart';
 import 'package:flutter_portfolio/config/light_theme.dart';
@@ -13,16 +14,27 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   bool isDark = false;
-  // This widget is the root of your application.
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Portfolio',
       debugShowCheckedModeBanner: false,
       themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
       theme: lightTheme(),
       darkTheme: darkTheme(),
-      home: NavigationScreen(),
+      home: FutureBuilder(
+        future: _initialization,
+        builder: (context, snapshot) {
+          if (snapshot.hasError) {
+            print("Error");
+          }
+          if (snapshot.connectionState == ConnectionState.done) {
+            return const NavigationScreen();
+          }
+          return Container();
+        },
+      ),
     );
   }
 }

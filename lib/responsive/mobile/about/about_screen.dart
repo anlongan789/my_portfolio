@@ -24,9 +24,10 @@ class MobileAbout extends StatelessWidget {
           child: Container(
             width: 100,
             height: 100,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("images/rocket.gif"), fit: BoxFit.cover),
+                  image: AssetImage("assets/images/rocket.gif"),
+                  fit: BoxFit.cover),
             ),
           ),
         ),

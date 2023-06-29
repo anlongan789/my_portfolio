@@ -32,7 +32,8 @@ class DesktopHome extends StatelessWidget {
                     // color: Color(0xff7e74f1),
                     borderRadius: BorderRadius.circular(10),
                     image: const DecorationImage(
-                        image: AssetImage("images/an.png"), fit: BoxFit.cover),
+                        image: AssetImage("assets/images/an.png"),
+                        fit: BoxFit.cover),
                   ),
                 ),
               ],
@@ -75,7 +76,7 @@ class DesktopHome extends StatelessWidget {
                       }
                     },
                     child: Image.asset(
-                      "images/git.png",
+                      "assets/images/git.png",
                       height: 20,
                       width: 20,
                       color: Theme.of(context).primaryColorDark,
@@ -94,7 +95,7 @@ class DesktopHome extends StatelessWidget {
                       }
                     },
                     child: Image.asset(
-                      "images/linkedin.png",
+                      "assets/images/linkedin.png",
                       height: 20,
                       width: 20,
                       color: Theme.of(context).primaryColorDark,
