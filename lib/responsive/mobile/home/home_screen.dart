@@ -76,7 +76,7 @@ class MobileHome extends StatelessWidget {
                       }
                     },
                     child: Image.asset(
-                      "images/git.png",
+                      "assets/images/git.png",
                       height: 20,
                       width: 20,
                       color: Theme.of(context).primaryColorDark,
@@ -95,7 +95,7 @@ class MobileHome extends StatelessWidget {
                       }
                     },
                     child: Image.asset(
-                      "images/linkedin.png",
+                      "assets/images/linkedin.png",
                       height: 20,
                       width: 20,
                       color: Theme.of(context).primaryColorDark,

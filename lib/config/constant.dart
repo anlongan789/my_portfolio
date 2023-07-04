@@ -11,7 +11,7 @@ String aboutMe =
 List skills = [
   (
     name: "Flutter",
-    rating: 3,
+    rating: 4,
   ),
   (
     name: "Java",
@@ -23,7 +23,7 @@ List skills = [
   ),
   (
     name: "Object Oriented Programming",
-    rating: 3.5,
+    rating: 4,
   ),
   (
     name: "Git",
