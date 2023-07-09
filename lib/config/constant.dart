@@ -7,7 +7,7 @@ String cvLink =
 //     "programming language and 1year experience with Flutter framework. Implementing Object Oriented Programming design pattern and RESTful API to create mobile apps.";
 
 String aboutMe =
-    "I am a fresh graduate student with 2 years experience working with Java programming language and 1 year experience with Flutter framework. Implementing Object Oriented Programming design pattern and RESTful API to create mobile apps. My favorites things are jogging, reading news and blogs about technologies, playing and creating games, listening to music. I'm aiming to become a top game creator and being able to stand on the GOTY stage.";
+    "I graduated from FPT University with 2 years experience working with Java programming language and 1 year experience with Flutter framework. Applying Object Oriented Programming design pattern and RESTful API to create mobile apps. My favorites things are jogging, reading news and blogs about technologies, playing and creating games, listening to music. I'm aiming to become a top game creator and being able to stand on the GOTY stage.";
 List skills = [
   (
     name: "Flutter",
@@ -17,10 +17,10 @@ List skills = [
     name: "Java",
     rating: 3,
   ),
-  (
-    name: "SQL Server",
-    rating: 2.5,
-  ),
+  // (
+  //   name: "SQL Server",
+  //   rating: 2.5,
+  // ),
   (
     name: "Object Oriented Programming",
     rating: 4,

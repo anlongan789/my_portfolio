@@ -60,7 +60,7 @@ class MobileTech extends StatelessWidget {
         ),
         const SizedBox(height: 5),
         Text(
-          "For 5+ years, I have been continuously learning new technologies and experimenting new frameworks. Here are my skills: ",
+          "I have been continuously learning new technologies and experimenting new frameworks. Here are my skills: ",
           style: Theme.of(context).textTheme.bodyMedium,
         ),
         const SizedBox(height: 5),
@@ -91,22 +91,22 @@ class MobileTech extends StatelessWidget {
                                 .bodyMedium!
                                 .copyWith(fontWeight: FontWeight.bold),
                           ),
-                          RatingBar.builder(
-                            initialRating: skills[index].rating,
-                            minRating: 1,
-                            direction: Axis.horizontal,
-                            allowHalfRating: true,
-                            ignoreGestures: true,
-                            itemCount: 5,
-                            // itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
-                            itemBuilder: (context, _) => Icon(
-                              Icons.star,
-                              color: Colors.amber,
-                            ),
-                            onRatingUpdate: (rating) {
-                              null;
-                            },
-                          )
+                          // RatingBar.builder(
+                          //   initialRating: skills[index].rating,
+                          //   minRating: 1,
+                          //   direction: Axis.horizontal,
+                          //   allowHalfRating: true,
+                          //   ignoreGestures: true,
+                          //   itemCount: 5,
+                          //   // itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                          //   itemBuilder: (context, _) => Icon(
+                          //     Icons.star,
+                          //     color: Colors.amber,
+                          //   ),
+                          //   onRatingUpdate: (rating) {
+                          //     null;
+                          //   },
+                          // )
                         ],
                       ),
                     ],
